@@ -389,43 +389,50 @@
 </section>
 
     <!-- ========================= -->
-    <!-- PLAYLIST -->
-    <!-- ========================= -->
+<!-- PLAYLIST -->
+<!-- ========================= -->
 
-    <section id="music" class="screen">
+<section id="music" class="screen">
 
-        <div class="window">
+    <div class="window">
 
-            <h1>Nossa Trilha Sonora</h1>
+        <h1>Nossa Trilha Sonora</h1>
 
-            <ul class="playlist">
+        <div style="display: flex; flex-direction: column; gap: 15px; align-items: center; margin-top: 20px;">
 
-                <li>❤️ Olhos Gigantes</li>
+            <!-- Música 1 -->
+            <div style="text-align: center;">
+                <p style="margin-bottom: 5px; font-size: 1.1em;">🎵 <strong>O que sinto por você:</strong></p>
+                <a href="https://youtu.be/lV2plyhSRBU?si=47IPtKKBAdTZXSkT" target="_blank" style="text-decoration: none;">
+                    <button>OUVIR AGORA ➡️</button>
+                </a>
+            </div>
 
-                <li>🐼 Panda - Eu Te Seguro</li>
+            <!-- Música 2 -->
+            <div style="text-align: center;">
+                <p style="margin-bottom: 5px; font-size: 1.1em;">🎵 <strong>Quando você me dedicou:</strong></p>
+                <a href="https://youtu.be/kI6ywewtYkc?si=JQeO_OJRM9YH0oiD" target="_blank" style="text-decoration: none;">
+                    <button>OUVIR AGORA ➡️</button>
+                </a>
+            </div>
 
-                <li>🎵 Vem Cá - Pelé MilFlows</li>
-
-            </ul>
-
-            <audio controls>
-
-                <source
-                    src="assets/music/music1.mp3"
-                    type="audio/mpeg">
-
-            </audio>
-
-            <button onclick="showScreen('dashboard')">
-
-                Voltar
-
-            </button>
+            <!-- Música 3 -->
+            <div style="text-align: center;">
+                <p style="margin-bottom: 5px; font-size: 1.1em;">🎵 <strong>Quando bate a saudade:</strong></p>
+                <a href="https://youtu.be/lFxXFq2zWOo?si=QoAH-SwBSHXLxbI4" target="_blank" style="text-decoration: none;">
+                    <button>OUVIR AGORA ➡️</button>
+                </a>
+            </div>
 
         </div>
 
-    </section>
+        <button onclick="showScreen('dashboard')" style="margin-top: 30px;">
+            Voltar
+        </button>
 
+    </div>
+
+</section>
     <!-- ========================= -->
     <!-- QUIZ -->
     <!-- ========================= -->
@@ -525,7 +532,7 @@
     <!-- CARTA -->
     <!-- ========================= -->
 
-  ```html
+ 
 <section id="letter" class="screen">
 
     <div class="window letter-box">
@@ -613,4 +620,4 @@
 </body>
 
 </html>
-```
+
