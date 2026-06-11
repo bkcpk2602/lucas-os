@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+
 /* ========================================
    LOVE_OS v2.8
    Bianca ❤️ Lucas
@@ -741,5 +742,21 @@ audio{
 
     #counter{
         font-size:1.4rem;
+       /* Isso aplica o estilo apenas se a tela tiver no máximo 600px de largura */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Diminui a fonte para caber melhor */
+    }
+
+    /* Exemplo: Ajuste o tamanho dos botões ou imagens para não estourarem a tela */
+    button, img {
+        width: 100%; /* Faz com que elementos ocupem toda a largura do celular */
+        max-width: 100%;
+       img {
+    max-width: 100%;
+    height: auto;
+}
+    }
+}
     }
 }
