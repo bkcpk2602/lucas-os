@@ -1,0 +1,616 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LOVE_OS v2.8 | Bianca ❤️ Lucas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="crt"></div>
+
+    <!-- ========================= -->
+    <!-- TERMO -->
+    <!-- ========================= -->
+
+    <section id="commitment-screen" class="screen active">
+
+        <div class="window">
+
+            <h1>LOVE_OS v2.8</h1>
+
+            <h2>PROTOCOLO DE CONEXÃO AMOROSA</h2>
+
+            <div class="contract">
+
+                <p>
+                    Eu,
+                    <input type="text"
+                        id="nameInput"
+                        placeholder="Digite seu nome">
+                    autorizo minha entrada neste sistema.
+                </p>
+
+                <p>
+                    Estou ciente de que este protocolo contém:
+                </p>
+
+                <p>❤️ Memórias</p>
+
+                <p>❤️ Fotos</p>
+
+                <p>❤️ Músicas</p>
+
+                <p>❤️ Sentimentos</p>
+
+                <p>
+                    e quantidades potencialmente perigosas de amor.
+                </p>
+
+            </div>
+
+            <button id="agreeBtn">
+
+                Concordar e Prosseguir
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- TRUST -->
+    <!-- ========================= -->
+
+    <section id="trust-screen" class="screen">
+
+        <div class="window center">
+
+            <h1>ACESSO RESTRITO</h1>
+
+            <button
+                class="trust-btn"
+                id="trustBtn">
+
+                CLIQUE AQUI
+
+                <br>
+
+                (confie em mim)
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- LOADING -->
+    <!-- ========================= -->
+
+    <section id="loading-screen" class="screen">
+
+        <div class="window center">
+
+            <h1>LOVE_OS</h1>
+
+            <p id="loadingText">
+                Inicializando sistema...
+            </p>
+
+            <div class="loading-bar">
+
+                <div id="progress"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- DASHBOARD -->
+    <!-- ========================= -->
+
+    <section id="dashboard" class="screen">
+
+        <div class="dashboard-container">
+
+            <div class="top-bar">
+
+                <span>
+                    LOVE_OS v2.8
+                </span>
+
+                <span>
+                    Bianca ❤️ Lucas
+                </span>
+
+            </div>
+
+            <div class="hero">
+
+                <h1>
+
+                    NOSSA HISTÓRIA
+
+                </h1>
+
+                <p id="counter"></p>
+
+                <div class="quote">
+
+                   My love
+
+                </div>
+
+            </div>
+
+            <div class="menu">
+
+                <button onclick="showScreen('timeline')">
+                    📅 Timeline
+                </button>
+
+                <button onclick="showScreen('gallery')">
+                    📷 Galeria
+                </button>
+
+                <button onclick="showScreen('music')">
+                    🎵 Playlist
+                </button>
+
+                <button onclick="showScreen('quiz')">
+                    🎮 Quiz
+                </button>
+
+                <button onclick="showScreen('secret')">
+                    🔒 Arquivo Secreto
+                </button>
+
+                <button onclick="showScreen('letter')">
+                    ❤️ Carta
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- TIMELINE -->
+    <!-- ========================= -->
+
+    <section id="timeline" class="screen">
+
+        <div class="window large">
+
+            <h1>Linha do Tempo</h1>
+
+            <div class="timeline">
+
+                <div class="event">
+
+                    <span>17/03/2023</span>
+
+                    <p>
+                        Nosso primeiro encontro.
+                    </p>
+
+                </div>
+
+                <div class="event">
+
+                    <span>17/03/2023</span>
+
+                    <p>
+                        O dia em que você começou
+                        a mudar minha vida.
+                    </p>
+
+                </div>
+
+                <div class="event">
+
+                    <span>28/05/2023</span>
+
+                    <p>
+                        Campos do Jordão.
+                        O lugar onde você me pediu
+                        em namoro.
+                    </p>
+
+                </div>
+
+                <div class="event">
+
+                    <span>Primeiro Dia dos Namorados</span>
+
+                    <p>
+                        A surpresa que você preparou
+                        para mim.
+                    </p>
+
+                </div>
+
+                <div class="event">
+
+                    <span>Conhecendo a Família</span>
+
+                    <p>
+                        Quando você veio
+                        pela primeira vez na minha casa.
+                    </p>
+
+                </div>
+
+                <div class="event">
+
+                    <span>Tardes Pós Aula</span>
+
+                    <p>
+                        Os dias simples que
+                        se tornaram inesquecíveis.
+                    </p>
+
+                </div>
+
+                <div class="event">
+
+                    <span>Formaturas</span>
+
+                    <p>
+                        Celebrando conquistas juntos.
+                    </p>
+
+                </div>
+
+                <div class="event">
+
+                    <span>Natal 2024</span>
+
+                    <p>
+                        Mais um capítulo lindo
+                        da nossa história.
+                    </p>
+
+                </div>
+
+                <div class="event">
+
+                    <span>Hoje</span>
+
+                    <p>
+                        Ainda escrevendo
+                        nossa história.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button onclick="showScreen('dashboard')">
+
+                Voltar
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- GALERIA -->
+    <!-- ========================= -->
+
+
+<section id="gallery" class="screen">
+
+    <div class="window large">
+
+        <h1>Galeria de Memórias</h1>
+
+        <div class="gallery-grid">
+
+            <img src="chroma.jpg" alt="Nossa primeira vez no Chroma ❤️">
+
+            <img src="conheceufamilia.webp" alt="Quando você conheceu minha família ❤️">
+
+            <img src="entradacoisalinda.jpg" alt="Um dos nossos momentos especiais ❤️">
+
+            <img src="formaturalucas.jpg" alt="Sua formatura ❤️">
+
+            <img src="iniciodotirodeguerra.jpg" alt="Início do tiro de guerra ❤️">
+
+            <img src="jundiai.jpg" alt="Jundiaí ❤️">
+
+            <img src="krispykremerealizousonho.jpg" alt="Você realizou meu sonho ❤️">
+
+            <img src="menosemaisshow.jpg" alt="Show do Menos é Mais ❤️">
+
+            <img src="meubatismo.jpg" alt="Meu batismo ❤️">
+
+            <img src="meusprimeirosgirassois.jpg" alt="Meus primeiros girassóis ❤️">
+
+            <img src="minhaformatura.jpg" alt="Minha formatura ❤️">
+
+            <img src="namoradosprimeiro.jpg" alt="Nosso primeiro dia dos namorados ❤️">
+
+            <img src="natal2024.jpg" alt="Natal 2024 ❤️">
+
+            <img src="nossopedidodenamoro.jpg" alt="O dia do nosso pedido de namoro ❤️">
+
+            <img src="primeiraflor.jpg" alt="A primeira flor ❤️">
+
+            <img src="realizoumeusonhovangogh.jpg" alt="Van Gogh ❤️">
+
+            <img src="santos.jpg" alt="Santos ❤️">
+
+            <img src="santosdenovo.jpg" alt="Santos de novo ❤️">
+
+            <img src="sedeclarando.jpg" alt="Quando você se declarou ❤️">
+
+            <img src="semtitulo.jpg" alt="Momento especial ❤️">
+
+            <img src="semtituloo.jpg" alt="Mais uma memória nossa ❤️">
+
+            <img src="souapaixonadaporvc.jpg" alt="Sou apaixonada por você ❤️">
+
+            <img src="srocabalanche.jpg" alt="Sorocabalanche ❤️">
+
+            <img src="suacasadiaprimeiro.jpg" alt="Primeira vez na sua casa ❤️">
+
+            <img src="suaformaturadafaculdade.jpg" alt="Sua formatura da faculdade ❤️">
+
+            <img src="tardesposaula.jpg" alt="Tardes pós aula ❤️">
+
+        </div>
+
+        <button onclick="showScreen('dashboard')">
+
+            Voltar
+
+        </button>
+
+    </div>
+
+</section>
+
+    <!-- ========================= -->
+    <!-- PLAYLIST -->
+    <!-- ========================= -->
+
+    <section id="music" class="screen">
+
+        <div class="window">
+
+            <h1>Nossa Trilha Sonora</h1>
+
+            <ul class="playlist">
+
+                <li>❤️ Olhos Gigantes</li>
+
+                <li>🐼 Panda - Eu Te Seguro</li>
+
+                <li>🎵 Vem Cá - Pelé MilFlows</li>
+
+            </ul>
+
+            <audio controls>
+
+                <source
+                    src="assets/music/music1.mp3"
+                    type="audio/mpeg">
+
+            </audio>
+
+            <button onclick="showScreen('dashboard')">
+
+                Voltar
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- QUIZ -->
+    <!-- ========================= -->
+
+    <section id="quiz" class="screen">
+
+        <div class="window">
+
+            <h1>Quanto Você Me Conhece?</h1>
+
+            <div id="questionBox">
+
+                <h2 id="question">
+
+                    Carregando...
+
+                </h2>
+
+            </div>
+
+            <div id="answers"></div>
+
+            <p id="score">
+
+                Pontuação: 0
+
+            </p>
+
+            <button onclick="showScreen('dashboard')">
+
+                Voltar
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- SECRET -->
+    <!-- ========================= -->
+
+    <section id="secret" class="screen">
+
+        <div class="window">
+
+            <h1>Arquivo Restrito</h1>
+
+            <input
+                type="password"
+                id="secretPassword"
+                placeholder="Senha">
+
+            <button onclick="checkPassword()">
+
+                Acessar
+
+            </button>
+
+            <div id="secretContent">
+
+                <h2>
+
+                    Acesso Liberado ❤️
+
+                </h2>
+
+                <p>
+
+                    Você encontrou
+                    o espaço mais especial
+                    deste sistema.
+
+                </p>
+
+                <p>
+
+                    Se chegou até aqui,
+                    significa que conhece
+                    muito bem a sua momolada.
+
+                </p>
+
+            </div>
+
+            <button onclick="showScreen('dashboard')">
+
+                Voltar
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- CARTA -->
+    <!-- ========================= -->
+
+  ```html
+<section id="letter" class="screen">
+
+    <div class="window letter-box">
+
+        <h1>Para Meu Amor ❤️</h1>
+
+        <p>
+            Lucas,
+        </p>
+
+        <p>
+            Desde a primeira vez que nos vimos, em 2022, eu não fazia ideia do quanto você se tornaria importante para mim.
+        </p>
+
+        <p>
+            Campos do Jordão sempre terá um significado especial, porque foi lá que percebi que, acima de tudo, nós nos amávamos e queríamos construir uma vida juntos.
+        </p>
+
+        <p>
+            Obrigada pelos hambúrgueres, pelos shows, pelas flores, pelos girassóis, pelas viagens, pelas risadas, pelo cuidado comigo, pelas conversas, pelos abraços, pelos cheiros no olhinho e por todos os sonhos que realizamos juntos — e pelos muitos que ainda vamos realizar.
+        </p>
+
+        <p>
+            Obrigada por ser meu melhor amigo, meu parceiro e o amor da minha vida. Deus foi muito bondoso ao me dar você, para me ensinar a amar e também a ser amada.
+        </p>
+
+        <p>
+            Eu sonho com o dia em que teremos nossa Celine, nosso Benício e tudo aquilo que planejamos durante tanto tempo. Sonho com a nossa casa, com as nossas conquistas e com cada nova fase que viveremos lado a lado.
+        </p>
+
+        <p>
+            Você sempre será meu amor, minha risada mais sincera, meu porto seguro e a pessoa que eu escolho todos os dias.
+        </p>
+
+        <p>
+            Que possamos desfrutar juntos dessa vida, amadurecer ao lado um do outro e caminhar sempre com Cristo no centro de tudo.
+        </p>
+
+        <p>
+            Eu te amo, meu príncipe. ❤️
+        </p>
+
+        <p style="text-align:center; margin-top:30px;">
+            <em>
+                "Tudo tem o seu tempo determinado, e há tempo para todo propósito debaixo do céu."
+                <br>
+                Eclesiastes 3:1
+            </em>
+        </p>
+
+        <p>
+            Com amor,
+            <br><br>
+            Bia, sua futura esposa. ❤️
+            Feliz dia dos Namorados, meu eterno namorado!
+        </p>
+
+        <button onclick="showScreen('dashboard')">
+            Voltar
+        </button>
+
+    </div>
+
+</section>
+```
+
+    <!-- ========================= -->
+    <!-- MODAL -->
+    <!-- ========================= -->
+
+    <div id="photoModal">
+
+        <span id="closeModal">
+
+            ✕
+
+        </span>
+
+        <img id="modalImage">
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
