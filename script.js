@@ -640,3 +640,53 @@ window.addEventListener(
 
     }
 );
+const songs = [
+    {
+        title: "Vem Cá - Pelé MilFlows (Prod. Volp & Rafa Valle)",
+        file: "assets/music/music1.mp3"
+    },
+    {
+        title: "Panda - Eu Te Seguro (Vídeo Oficial)",
+        file: "assets/music/music2.mp3"
+    },
+    {
+        title: "Rubel - Quando Bate Aquela Saudade [Áudio Oficial]",
+        file: "assets/music/music3.mp3"
+    }
+];
+
+let currentSong = 0;
+
+function loadSong(index) {
+
+    const player = document.getElementById("musicPlayer");
+    const source = document.getElementById("musicSource");
+    const title = document.getElementById("songTitle");
+
+    source.src = songs[index].file;
+    title.textContent = songs[index].title;
+
+    player.load();
+}
+
+function nextSong() {
+
+    currentSong++;
+
+    if (currentSong >= songs.length) {
+        currentSong = 0;
+    }
+
+    loadSong(currentSong);
+}
+
+function previousSong() {
+
+    currentSong--;
+
+    if (currentSong < 0) {
+        currentSong = songs.length - 1;
+    }
+
+    loadSong(currentSong);
+}
